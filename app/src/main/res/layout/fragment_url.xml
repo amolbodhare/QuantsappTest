@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.URLFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <WebView
+        android:id="@+id/wenView"
+        android:layout_above="@id/webViewBtn"
+        android:background="@color/textgrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/webViewBtn"
+        android:text="Download \u0026 show in Webview"
+        android:background="@drawable/clickable_btn_bg"
+        android:layout_above="@id/downloadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/downloadBtn"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/clickable_btn_bg"
+        android:text="Download Excel to Quantsapp Folder"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
